@@ -1,0 +1,10 @@
+ggsett=["Lunedì","Martedì","Mercoledì", "Giovedì","Venerdì", "Sabato", "Domenica"]
+ggsett_5=ggsett*4
+ggoct=[]
+dicc={}
+for i in range(31):
+    ggoct.append(i+1)
+for n,s in zip(ggsett_5,ggoct):
+    dicc.update({"{:}".format(n):s})
+print(dicc)
+    
